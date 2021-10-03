@@ -4,11 +4,13 @@ body{
     background: linear-gradient(to right,#2E3440, #4C566A);
 }
 
+
 .bg{
     background-image: url(../img/col1.png);
     background-position: center center;
     background-size: cover;
 }
+
 .bg-principal{
     background: #ECEFF4;
 }
