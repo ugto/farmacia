@@ -1,12 +1,14 @@
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: red;
+    background:#2E3440;
+    background: linear-gradient(to right,#2E3440, #4C566A);
 }
-p {
-    color: red;
-  }
 
 .bg{
-    background-image: url(img/col1.jpg);
+    background-image: url(../img/col1.png);
     background-position: center center;
+    background-size: cover;
+}
+.bg-principal{
+    background: #ECEFF4;
 }
