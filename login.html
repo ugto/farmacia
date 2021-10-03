@@ -28,12 +28,23 @@
                 <!--Formularios-->
                 <form action="#">
                     <div class="mb-4"> <!--Correo-->
-                        <label for="correo" class="form-label">Correo Electronico</label>
+                        <label for="correo" class="form-label">Correo Electrónico</label>
                         <input type="correo" class="form-control" name="correo">
                     </div>
                     <div class="mb-4"> <!--Contraseña-->
                         <label for="contrasena" class="form-label">Contraseña</label>
                         <input type="contrasena" class="form-control" name="contrasena">
+                    </div>
+                    <div class="mb-4 form-check"> <!--Mantenerse conectado-->
+                        <input type="checkbox" name="conectado" class="form-check-input">
+                        <label for="conectado" class="form-check-label">Seguir conectado</label>
+                    </div>
+                    <div class="d-grid"> <!--Buton para iniciar-->
+                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                    </div>
+                    <div class="my-3">
+                        <span>¿No estás registrado? <a href="#">Regístrate</a></span> <br>
+                        <span><a href="#">Perdí mi Contraseña</a></span>
                     </div>
                 </form>
             </div>
