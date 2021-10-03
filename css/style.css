@@ -1,3 +1,14 @@
+@import url ('https://fonts.googleapis.com/css2? family = Benne & family = Open + Sans & display = swap');
+
 body{
     font-family: 'Poppins', sans-serif;
+}
+
+.navbar .logo{
+    width: 100px;
+}
+
+section{
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
