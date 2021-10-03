@@ -1,0 +1,12 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: red;
+}
+p {
+    color: red;
+  }
+
+.bg{
+    background-image: url(img/col1.jpg);
+    background-position: center center;
+}
