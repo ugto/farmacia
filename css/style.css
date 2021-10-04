@@ -11,3 +11,22 @@ img{
 .navbar-color {
     background:#2E3440;
 }
+
+.producto-color {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgb(149, 255, 197)40%,rgb(77, 185, 235));
+    background-repeat: repeat-x;
+    background-size: 75%;
+    margin-top: -20px;
+}
+
+.card-border{
+    border: solid 10px white;
+    border-radius: 50px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+
+.card-border:hover{
+    transform: scale(1.05);
+}
