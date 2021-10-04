@@ -30,3 +30,30 @@ img{
 .card-border:hover{
     transform: scale(1.05);
 }
+.iconbox{
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(white);
+    color: rgb(241, 14, 14);
+    font-size:32px;
+    border-radius: 100px;
+    flex: none;
+}
+
+
+#anuncio{
+    background: rgb(173, 173, 173);
+    background-repeat: repeat-x;
+    background-size: 75%;
+    margin-top: -20px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-trans{
+    border: solid 1px #000000;
+}
