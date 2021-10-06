@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <title>Farmacia</title>
     <!-- Link CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -14,14 +15,144 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
 
-    
+    <title>FARMACIA</title>
 
 </head>
 <body>
-    <nav></nav>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg py-2 sticky-top navbar-dark navbar-color">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img class="logo" src="img/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="usuarios.html">Registro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+            </ul>
+            <a href="login.html"><input type="button" value="Login"></a>
+          </div>
+        </div>
+      </nav>
+    <!-- FIN DEL MENU -->
+
+    <!-- CARRUSEL-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/int_1.jpg" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="img/int_3.jpg" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="img/int_1.jpg" class="d-block w-100" alt="">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!-- FIN DEL CARRUSEL -->
     <main></main>
-    <section></section>
-    <section></section>
+
+    <!-- SERVICIOS-->
+    <section id="section" class="producto-color">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto text-xl-center">
+                    <h1><font face = "Algerian"> ----- SERVICIOS ----- </font></h1>
+                    <p> Todas las sucursales de nuestra FARMACIA te ofrecen gran variedad de servicios con la finalidad
+                        de satisfacer las nesesidades del cliente </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4 box">
+                    <ion-icon class="icon-big" name="card-sharp"></ion-icon>
+                    <h4> Pago con Tarjeta.</h4>
+                    <p>
+                        ¡No tienes efectivo! 
+                        Todas nuestras sucursales cuentan con terminal para que usted como cliente
+                        si no cuenta con dinero en efectivo pueda pagar con tarjeta.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <ion-icon class="icon-big" name="cart-sharp"></ion-icon>
+                    <h5> Pedidos a domicilio.</h5>
+                    <p>
+                        ¡No quieres salir de casa!
+                        te damos la solucion, todas las sucursales de nuestra farmacia cuentan con 
+                        un apartado para realizar pedidos en linea y llevarte el producto hasta la puestra
+                        de tu casa.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <ion-icon class="icon-big" name="megaphone-sharp"></ion-icon>
+                    <h4> Promociones.</h4>
+                    <p>
+                        Contamos con gran variedad de promociones y/o descuentos en medicamentos, si eres cliente
+                        registrado en alguna de las sucursales podras obtener notificaciones y bonos para estar
+                        siempre enterado de todas estas promociones.  
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <ion-icon class="icon-big" name="medkit-sharp"></ion-icon>
+                    <h4> Medico las 24 hrs.</h4>
+                    <p>
+                        Si usted presenta algun sintoma de enfermedad, corra a cualquier sucursal de nuestras
+                        farmacias, ya que, todas cuentan con un medicco de cabezera las 24 hrs del dia. no pierdas
+                        tiempo trata los sintomas inmediatamente.
+                    </p>
+                </div>
+            </div>   
+        </div>
+    </section>
+    <!-- FIN DE SERVICIOS-->
+
+    <!-- SUCURSALES -->
+    <section class="producto-color" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto text-xl-center">
+                    <h1> <font face = "Algerian"> TENEMOS SUCURSALES EN ... </font> </h1>
+                </div>
+            </div>
+    <tabla>
+        <td>
+            <div class = " contenedor">
+                <center> <img src = "img/sur_2.png"> </center>
+                <div class = "centrado"> MOROLEON, calle 5 de febrero #45 int 16. TEL:4456789876 </div>
+            </div>
+        </td>
+        <td>
+            <div class = "contenedor ">
+               <center> <img src = "img/sur_2.png" > </center>
+                <div class = "centrado"> URIANGATO, calle pedro javier #67 int 78. TEL:4451234567 </div>
+            </div>
+        </td>
+    </table>
+    </div>
+    </section>
     <footer></footer>
     
     <!-- Js bootstrap -->

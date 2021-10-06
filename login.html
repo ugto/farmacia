@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Link Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+
+    <title>Inicio de Sesion</title>
+</head>
+
+<body>
+
+            <!-- Menu -->
+            <nav class="navbar navbar-expand-lg py-2 sticky-top navbar-dark navbar-color">
+                <div class="container">
+                  <a class="navbar-brand" href="#">
+                    <img class="logo" src="img/logo.png" alt="">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="usuarios.html">Registro</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                      </li>
+                    </ul>
+                    <a href="login.html"><input type="button" value="Login"></a>
+                  </div>
+                </div>
+              </nav>
+            <!-- FIN DEL MENU -->
+
+    <div class="container w-75 bg-principal mt-5 rounded mb-5 shadow color" >
+        <div class="row align-items-stretch"> <!--Contenedor principal con una sola fila pero dos columnas-->
+            <div class="col bg  d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded"> <!--La primera columna sera simplemente una imagen-->
+            </div>
+            <div class="col p-5 rounded-end"> <!--La segunda columna seran los formularios y el logo-->
+                <div class="text-end text-center">
+                    <img src="img/logofarmacia.png" width="100" alt=""> <!--Logo-->
+                </div>
+                <h2 class="fw-bold text-center py-5">Bienvenido</h2>
+                <!--Formularios-->
+                <form action="#">
+                    <div class="mb-4"> <!--Correo-->
+                        <label for="correo" class="form-label">Correo Electrónico</label>
+                        <input type="correo" class="form-control" name="correo">
+                    </div>
+                    <div class="mb-4"> <!--Contraseña-->
+                        <label for="contrasena" class="form-label">Contraseña</label>
+                        <input type="contrasena" class="form-control" name="contrasena">
+                    </div>
+                    <div class="mb-4 form-check"> <!--Mantenerse conectado-->
+                        <input type="checkbox" name="conectado" class="form-check-input">
+                        <label for="conectado" class="form-check-label">Seguir conectado</label>
+                    </div>
+                    <div class="d-grid"> <!--Buton para iniciar-->
+                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                    </div>
+                    <div class="my-3">
+                        <span>¿No estás registrado? <a href="#">Regístrate</a></span> <br>
+                        <span><a href="#">Perdí mi Contraseña</a></span>
+                    </div>
+                </form>
+                <!--Redes Sociales-->
+                <div class="container w-100 my-5">
+                    <div class="row text-center">
+                        <div class="col-12">Iniciar Sesión</div>
+                    </div>
+                    <div class="row">
+                        <div class="col"> <!--Boton Facebook-->
+                            <button class="btn btn-outline-primary w-100 my-1" >
+                                <div class="row align-items-center">
+                                    <div class="col-2 d-none d-md-block">
+                                        <img src="img/facebook.png" width="32" alt="">
+                                    </div>
+                                    <div class="col-12 col-md-10 text-center">Facebook</div>
+                                </div>
+                            </button>
+                        </div>
+
+                        <div class="col"> <!--Boton Google-->
+                            <button class="btn btn-outline-danger w-100 my-1" >
+                                <div class="row align-items-center">
+                                    <div class="col-2 d-none d-md-block">
+                                        <img src="img/google.png" width="32" alt="">
+                                    </div>
+                                    <div class="col-12 col-md-10 text-center">Google</div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    
+</body>
+</html>
